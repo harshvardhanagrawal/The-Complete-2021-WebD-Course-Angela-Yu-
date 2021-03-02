@@ -1,0 +1,12 @@
+Documentation: ejs.co
+
+EJS files are used to create html templates for HTML
+
+Format is normal html syntax. 
+
+Use <% attrbtes to insert JavaScript code.
+
+Variables can also be defined in an EJS file using <%=, thus eliminating the need to create seperate html files for each possible case. (we are talking about backend scipting here)
+These variables can be sent values using render() function. The values are passed in the form of a JSON object.
+
+All the ejs files should be created in a views directory.
