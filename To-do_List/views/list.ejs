@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8"> 
+    <title>To Do List</title>
+</head>
+
+<body>
+
+    <% if(kindOfDay == "Weekday"){ %>
+    <h1 style = "color:red">It's a <%= kindOfDay %>!</h1>
+
+    <% }else {%>
+    <h1 style = "color:yellow">It's a <%= kindOfDay %>!</h1>
+    <% } %>
+    <ul>
+        <li>Buy Stuff</li>
+        <li>Make Food</li>
+        <li>EatFood</li>
+
+        <% for(var i = 1;i < items.length;i++){ %>
+        <li> <%= items[i] %></li>
+        <% } %>
+    </ul>
+
+    <form action="/" method="post">
+        <input type="text" name="newItem">
+    </form>
+</body>
